@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee9df">
+  <meta name="description" content="Step into a snowy moment from REWRITE, an original story by Ian Rosenthal. An interactive scene told through words, weather, and a doorway.">
+  <title>REWRITE — Snow on my boots · Ian Rosenthal</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#experience">Skip to the scene</a>
+  <header class="masthead">
+    <a class="wordmark" href="#" aria-label="REWRITE, back to the beginning">RE<span>W</span>RITE<span class="wordmark-dot">.</span></a>
+    
+    <nav aria-label="Page navigation"><button class="text-button" id="read-btn">Read the excerpt <span aria-hidden="true">↗</span></button></nav>
+  </header>
+
+  <main>
+    <section class="experience" id="experience" aria-label="Interactive scene: Snow on my boots">
+      
+      <div class="scene" data-phase="outside" data-beat="0" id="scene">
+        <div class="sky-mark" aria-hidden="true">❆</div>
+        <div class="print-texture" aria-hidden="true"></div>
+        <div class="comic-dots" aria-hidden="true"></div>
+        <div class="ink-hatching" aria-hidden="true"></div>
+        <div class="far-trees" aria-hidden="true"></div>
+        <div class="snow-bank" aria-hidden="true"></div>
+        <div class="illustration" aria-hidden="true">
+          <svg class="house" viewBox="0 0 780 690" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="siding" width="40" height="34" patternUnits="userSpaceOnUse"><path d="M0 32H40" stroke="#39364e" stroke-opacity=".27" stroke-width="2"/><path d="M0 34H40" stroke="#e8edf1" stroke-opacity=".22"/></pattern>
+              <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#302a47" opacity=".33"/></pattern>
+              <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bdc4db"/><stop offset="1" stop-color="#8d91b3"/></linearGradient>
+              <linearGradient id="doorWood" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#393a58"/><stop offset=".75" stop-color="#494764"/><stop offset="1" stop-color="#252940"/></linearGradient>
+              <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe6a1"/><stop offset="1" stop-color="#d79373"/></linearGradient>
+              <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff0b7" stop-opacity=".7"/><stop offset="1" stop-color="#fff0b7" stop-opacity="0"/></linearGradient>
+              <filter id="warmGlow"><feGaussianBlur stdDeviation="12"/></filter>
+            </defs>
+            <g class="house-building">
+              <path d="M191 192L456 41 747 130 780 531 197 603Z" fill="#c35e9b" opacity=".27" transform="translate(-9,4)"/>
+              <path d="M196 189L458 44 746 130 780 531 196 602Z" fill="url(#wall)" stroke="#393349" stroke-width="4"/>
+              <path d="M196 189L458 44 746 130 780 531 196 602Z" fill="url(#siding)"/>
+              <path d="M195 204L458 62 747 147 745 129 457 43 195 189Z" fill="#363347" opacity=".45"/>
+              <path d="M154 192L454 18 776 113 765 140 456 50 172 213Z" fill="#d9e8ec" stroke="#393349" stroke-width="4"/>
+              <path d="M157 187L454 15 777 108 775 120 459 36 170 207Z" fill="#f3f2e9"/>
+              <path d="M194 211L215 199 215 581 195 602Z" fill="#6e6b91"/>
+              <path d="M666 144L780 178 780 530 673 544Z" fill="url(#dots)"/>
+              <path d="M243 224L337 197 337 337 242 353Z" fill="#343148" stroke="#3c354d" stroke-width="9"/>
+              <path d="M250 231L329 209 329 329 250 343Z" fill="url(#warm)"/>
+              <path d="M250 231L329 209 329 329 250 343Z" fill="#ffc98c" opacity=".45" filter="url(#warmGlow)"/>
+              <path d="M290 220V338M250 286L329 270" stroke="#56516a" stroke-width="6"/>
+              <path d="M245 227L270 220 263 338 250 342Z" fill="#e8c797" opacity=".75"/>
+              <path d="M315 214L330 210 329 328 315 331Z" fill="#e8c797" opacity=".75"/>
+              <path d="M234 353L344 334 349 347 235 366Z" fill="#eeeee8" stroke="#48415b" stroke-width="3"/>
+              <g class="doorway">
+                <path d="M376 204L589 177 599 555 373 582Z" fill="#2b263d" stroke="#58516a" stroke-width="14"/>
+                <path d="M387 211L578 187 588 551 386 573Z" fill="url(#warm)"/>
+                <g class="room"><path d="M420 242L553 225 558 469 424 488Z" fill="#b67d71"/><path d="M438 264L536 251 538 459 439 473Z" fill="#584757"/><path d="M391 500L581 478 587 550 386 573Z" fill="#b08379"/><path d="M405 529L563 510M425 508L430 566M552 489L558 553" stroke="#805a64" stroke-width="2"/><path d="M474 321L508 315 516 345 466 351Z" fill="#ffecb0"/><path d="M491 347V438M475 440L508 435" stroke="#634c60" stroke-width="4"/></g>
+                <g class="door-leaf">
+                  <path d="M387 210L578 187 588 551 386 573Z" fill="url(#doorWood)" stroke="#28283c" stroke-width="4"/>
+                  <path d="M409 238L555 219 556 345 410 363Z" fill="#55516d" stroke="#2f2d44" stroke-width="4"/>
+                  <path d="M418 248L548 232 549 334 419 351Z" fill="#67627e" opacity=".4"/>
+                  <path d="M410 396L558 377 563 523 411 542Z" fill="#43425e" stroke="#2f2d44" stroke-width="4"/>
+                  <path d="M421 409L548 393 552 511 422 527Z" fill="url(#dots)"/>
+                  <ellipse cx="553" cy="369" rx="7" ry="9" fill="#f4c88b" stroke="#2b263d" stroke-width="2"/>
+                  <path d="M474 272L493 270 493 293 475 295Z" fill="#292a40" stroke="#ad8598" stroke-width="2"/>
+                  <path d="M477 293Q483 312 493 291" stroke="#c99793" fill="none" stroke-width="4"/>
+                </g>
+                <path class="door-crack" d="M585 192L590 554" stroke="#ffecb7" stroke-width="3"/>
+              </g>
+              <path class="light-spill" d="M385 570L590 550 731 689 142 689Z" fill="url(#pool)"/>
+              <path d="M361 584L608 552 642 581 344 621Z" fill="#6d6682" stroke="#3a334a" stroke-width="4"/>
+              <path d="M343 616L643 579 654 595 335 641Z" fill="#b9bdd1" stroke="#48415b" stroke-width="3"/>
+              <path d="M329 637L653 592 674 613 310 666Z" fill="#dee5e8" stroke="#48415b" stroke-width="3"/>
+              <path d="M327 637L362 630 366 638 515 617 519 624 649 606 662 615 318 660Z" fill="#f3f1e7"/>
+              <path d="M597 158L613 153 615 181 600 186Z" fill="#3c344b"/>
+              <path d="M592 183L624 178 627 228 593 233Z" fill="#fbd99c" stroke="#40374d" stroke-width="5"/>
+              <path d="M590 181L608 166 626 176Z" fill="#44384e"/>
+              <path d="M609 182V230" stroke="#6e5060" stroke-width="3"/>
+              <ellipse cx="608" cy="209" rx="28" ry="38" fill="#ffda95" opacity=".25" filter="url(#warmGlow)"/>
+              <path d="M203 554Q239 545 267 566T331 572L322 619 188 639Z" fill="#dbe5e9"/>
+              <path d="M674 524Q703 514 733 534T791 535L795 584 667 600Z" fill="#dce7eb"/>
+            </g>
+            <g class="boots"><path d="M236 588L267 579 277 623Q283 635 302 639Q311 651 297 662L250 668Q235 660 239 649Z" fill="#3b364e" stroke="#282438" stroke-width="3"/><path d="M191 612L218 600 229 646Q239 654 256 656Q266 669 251 678L207 685Q192 681 193 669Z" fill="#49405c" stroke="#282438" stroke-width="3"/><path d="M238 588L268 579 269 593 239 602M191 612L217 601 220 615 193 627" stroke="#e7e6e2" stroke-width="7"/><path d="M262 635L291 641M217 656L248 663" stroke="#e6e7e5" stroke-width="5" stroke-linecap="round"/></g>
+            <g class="knock-marks"><path d="M352 310L323 299M355 326L323 331M357 291L343 271" stroke="#f1bdd8" stroke-width="5" stroke-linecap="round"/></g>
+          </svg>
+        </div>
+        <canvas id="snow" aria-hidden="true"></canvas>
+        <div class="scene-content">
+          <span class="scene-tag" id="scene-tag">01 / OUTSIDE</span>
+          <div id="beat-copy" class="beat-copy" aria-live="polite" aria-atomic="true"></div>
+          <button class="begin" id="begin-btn">Knock on the door <span aria-hidden="true">↗</span></button>
+        </div>
+        <button class="door-hit" id="door-hit" aria-label="Knock on the door to continue the scene"></button>
+        
+        <div class="sfx" id="sfx" aria-hidden="true"></div>
+        
+      </div>
+      <div class="player">
+        <div class="transport"><button class="icon-button" id="prev-btn" aria-label="Previous beat" disabled>←</button><span class="count"><b id="beat-number">01</b><span>/ 10</span></span><button class="icon-button next" id="next-btn" aria-label="Next beat">→</button></div>
+        <div class="timeline" id="timeline" role="group" aria-label="Choose a story beat"></div>
+        <div class="settings"><button id="sound-btn" aria-pressed="false"><span aria-hidden="true">♫</span> Sound off</button><button id="motion-btn" aria-pressed="true"><span aria-hidden="true">≈</span> Motion on</button></div>
+      </div>
+      <div class="player-foot"><span id="hint">Click the door or use the arrows. Take your time.</span></div>
+    </section>
+
+    <section class="credits" aria-label="About this excerpt">
+      <div><p class="credit-line">An interactive excerpt from a plot twist unspoiled that I've written</p><p class="byline">Made by Ian Rosenthal.</p></div>
+      <aside class="colophon"><span class="tiny-label">MADE WITH</span><p>HTML · CSS · JavaScript<br>Illustration, type &amp; sound</p></aside>
+    </section>
+  </main>
+
+  <dialog id="excerpt-dialog" aria-labelledby="excerpt-title"><div class="dialog-top"><span class="tiny-label">THE ORIGINAL WORDS</span><button id="close-dialog" class="icon-button" aria-label="Close excerpt">×</button></div><h2 id="excerpt-title">Snow on my boots.</h2><p class="excerpt-credit">An excerpt from REWRITE · Ian Rosenthal</p><div id="transcript" class="transcript"></div><p class="editor-note">Snow symbols become the weather in the interactive version. Dialogue and narration are preserved; paragraph breaks separate the scene’s beats.</p></dialog>
+</body>
+</html>
